@@ -1,0 +1,122 @@
+@import "./mixins";
+@import "./reset";
+@import "./vars";
+
+li,ul {
+    list-style-type: none;
+}
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Spectral';
+}
+
+.wrapper {
+    width: 100rem;
+    margin:0 auto;
+}
+.header__content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    height: 3.3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__title {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    .header__actions {
+        position: absolute;
+        left: 20%;
+    }
+    .header__link {
+        padding-right: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+////DROPDOWN-MENU
+.header__menu-name {
+    position: absolute;
+    top:8%;
+    left: 42%;
+    border: 1px solid #B39D79;
+    border-radius: .8rem;
+    padding: .7rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+}
+.header__submenu {
+    display: none;
+    width: 7rem;
+    height: 10rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 42rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #e1e4ed;
+    background-color: #ffffff;
+
+    transition: .4s all;
+}
+.header__submenu > .header__menu-item {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.header__submenu > .header__menu-item:last-child {
+    margin-bottom: 0;
+}
+.header__menu-item:hover .header__submenu {
+    display: block;
+}
+
+
+
+// ---------MAIN CONTENT-------
+.main_content {
+    padding-top: 5.7rem;
+    max-width: 47.4rem;
+    margin: 0 auto;
+    .first__subtitle {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    }
+    .first__title {
+        font-weight: 300;
+        font-size: 2.8rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        padding-bottom: 1.9rem;
+    }
+    .first__text {
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.001em;
+    }
+}
