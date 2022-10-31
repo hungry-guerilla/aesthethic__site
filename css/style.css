@@ -371,6 +371,7 @@ body {
 }
 
 .header {
+  display: block;
   position: relative;
   height: 3.3rem;
   padding: 1rem 3rem;
@@ -396,6 +397,13 @@ body {
   padding-right: 2rem;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.header__content:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgb(223, 223, 223);
 }
 
 .header__menu-name {
@@ -464,4 +472,22 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.001em;
+}
+
+.first__text:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 3rem;
+  background: rgb(223, 223, 223);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.second__title {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #B39D79;
 }/*# sourceMappingURL=style.css.map */
