@@ -349,7 +349,16 @@ li, ul {
 }
 
 a {
+  position: relative;
   color: black;
+}
+a .header__link-icon {
+  position: absolute;
+  bottom: -70%;
+  left: -15%;
+  width: 1.5rem;
+  height: 3.6rem;
+  padding-right: 9px;
 }
 
 html {
@@ -388,6 +397,8 @@ body {
 .header .header__title {
   font-size: 1.7rem;
   font-weight: 500;
+  padding-right: 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .header__actions {
   position: absolute;
