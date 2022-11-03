@@ -35,6 +35,7 @@ body {
 .wrapper {
     width: 100rem;
     margin:0 auto;
+    padding-bottom: 2.1rem;
 }
 .header__content {
     width: 100%;
@@ -492,6 +493,103 @@ body {
     color: #B39D79;
 }
 
+// ----------MEDIAQUERIES----------
 
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    body {
+        font-size: .5rem;
+    }
+    .first__title {
+        font-size: .2rem;
+    }
+    .main_content {
+        max-width: 100%;
+    }
+    .experts__line {
+        margin-bottom: 1rem;
+    }
+    .wrapper {
+        padding: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .header__title {
+        margin-left: 30%;
+        margin-right: auto;
+    }
+    .header__actions {
+        display: none;
+    }
+    .header__menu {
+       display: none;
+    }
+    .experts__title {
+        text-align: center;
+    }
+    .experts__carousel{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .experts__item{
+        margin-bottom: 2rem;
+    }
+    .experts__line {
+        margin-bottom: 0.5rem;
+    }
+    .procedurs__video {
+        max-width: 100%;
+    }
+    .procedurs__item-block {
+        max-width:100%
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+    }
+    .header__title {
+        margin:0 auto;
+    }
+    .header__actions {
+        display: none;
+    }
+    .header__menu {
+       display: none;
+    }
+    .experts__title {
+        text-align: center;
+    }
+    .experts__carousel{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .experts__item{
+        margin-bottom: 2rem;
+    }
+    .experts__line {
+        margin-bottom: 0.5rem;
+    }
+    .procedurs__video {
+        max-width: 100%;
+    }
+    .procedurs__item-block {
+        max-width:100%
+    }
+ }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }
 
 
